@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #11120c ;
+}
+
+.cabecalho div img{
+border-radius: 360px;
+width: 200px;
+}
+
+.content{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content ul{
+    list-style: none;
+    display: flex;
+
+}
+
+.content li{
+    margin: 20px;
+}
+.content a:hover{
+    color: rgb(187, 187, 187);
+}
+.content a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+.banner img{
+    max-width:100%;
+}
+
+
+.projetos{
+padding: 20px;
+display: flex;
+justify-content: center;
+}
+
+.projeto{
+align-items: center;
+text-align: center;
+margin: 20px;
+
+}
+
+.projeto img{
+    width: 350px;
+    border-radius: 20px;
+
+}
+.projeto p{
+    font-size: 25px;
+}
+
+
+/* AREA DA PAGINA DE PROJETOS*/
+
+.container{
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+
+    
+
+}
+
+.container h1{
+    font-size: 30px;
+    color: #03f86d;
+}
+
+.container h2{
+    color: #03f86d;
+    font-size: 25px;
+}
+.container p{
+    font-size: 20px;
+}
+
+.container li{
+    font-size: 20px;
+}
+
+
+.creditos li{
+    color:rgb(161, 161, 255) ;
+}

@@ -109,3 +109,43 @@ margin: 20px;
 .creditos li{
     color:rgb(161, 161, 255) ;
 }
+
+
+
+
+.redes {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+
+.redes div{
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+
+
+/* styles/style.css */
+
+.redes img.img2 {
+    display: none; /* A segunda imagem fica oculta por padrão */
+}
+
+.redes div:hover img.img1 {
+    display: none; /* Esconde a primeira imagem ao passar o mouse */
+}
+
+.redes div:hover img.img2 {
+    display: inline; /* Mostra a segunda imagem ao passar o mouse */
+}
+
+.redes p{
+    font-size: 25px;
+}
+
+.redes div:hover p{
+    transition: 100ms;
+    color:#03f86d ;
+}

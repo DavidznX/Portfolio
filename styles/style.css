@@ -149,3 +149,55 @@ margin: 20px;
     transition: 100ms;
     color:#03f86d ;
 }
+
+.competencias{
+    display: flex;
+    justify-content: center;
+}
+.competencias h1{
+    align-items: center;
+}
+.competencias div{
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.competencias p{
+    font-size: 20px;
+}
+
+.sobremim{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    align-items: center;
+}
+
+.sobremim div{
+    margin: 20px;
+}
+.sobremim img{
+    width: 500px;
+}
+
+.sobremim p{
+    font-size: 20px;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.sobremim h1{
+    font-size: 30px;
+}
+
+.sobre_mim_imgs{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.sobre_mim_imgs img{
+    width: 165px;
+}

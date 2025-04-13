@@ -1,0 +1,14 @@
+[
+  {
+    "nome": "Mouse Gamer XYZ",
+    "imagem": "https://linkdaimagem.com/mouse.jpg",
+    "preco": "R$ 129,90",
+    "linkAfiliado": "https://amazon.com.br/exemplo-afiliado-mouse"
+  },
+  {
+    "nome": "Teclado Mecânico ABC",
+    "imagem": "https://linkdaimagem.com/teclado.jpg",
+    "preco": "R$ 299,90",
+    "linkAfiliado": "https://amazon.com.br/exemplo-afiliado-teclado"
+  }
+]

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>Detalhes do Produto</title>
+</head>
+<body>
+
+  <header class="cabecalho" id="produtosssss">
+    <div class="content">
+        <div> 
+            <img src="../img/logodavid.png" alt="">
+        </div>
+        <div>
+            <ul>
+                <li><a href="../redes.htm">REDES</a></li>
+                <li><a href="../index.htm">PROJETOS</a></li>
+                <li><a href="../sobre_mim.htm">SOBRE MIM</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+  <div id="produto-detalhe" class="produto-detalhe"></div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+
+    fetch('produtos.json')
+      .then(res => res.json())
+      .then(produtos => {
+        const produto = produtos[id];
+        const container = document.getElementById('produto-detalhe');
+
+        if (produto) {
+          container.innerHTML = `
+            <div class='desc_prod'>
+              <div class='desc_prod_container'>
+
+                <div>
+                <h1>${produto.nome}</h1>
+                <img src="${produto.imagem}" alt="${produto.nome}">
+                </div>
+
+                <div>
+                <p class='price_product'><strong>Preço:</strong> ${produto.preco}</p>
+                <p class='buy_button'><a href="${produto.linkAfiliado}" target="_blank">Comprar</a></p>
+                </div>
+
+
+
+              <div class='desc_prod_inf'>
+              <p>${produto.desc}</p>
+              </div>
+              
+
+              <div class='galery'>
+                <a class='_photo' href="${produto.imagem1}" target="_blank"><img src="${produto.imagem1}" alt="${produto.nome}"></a>
+                <a class='_photo' href="${produto.imagem2}" target="_blank"><img src="${produto.imagem2}" alt="${produto.nome}"></a>
+                <a class='_photo' href="${produto.imagem3}" target="_blank"><img src="${produto.imagem3}" alt="${produto.nome}"></a>
+                <a class='_photo' href="${produto.imagem4}" target="_blank"><img src="${produto.imagem4}" alt="${produto.nome}"></a>
+              </div>
+
+              </div>
+            </div>
+          `;
+        } else {
+          container.innerHTML = "<p>Produto não encontrado.</p>";
+        }
+      })
+      .catch(error => {
+        console.error('Erro ao carregar os detalhes do produto:', error);
+      });
+  </script>
+</body>
+</html>

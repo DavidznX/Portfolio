@@ -222,10 +222,11 @@ margin: 20px;
 #lista-produtos{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #lista-produtos img{
-    width: 400px;
+    width: 260px;
 }
 
 .desc_prod{

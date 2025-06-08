@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffffff ;
+}
+
+
+.cabecalho div img{
+
+width: 200px;
+}
+
+.content{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content ul{
+    list-style: none;
+    display: flex;
+
+}
+
+.content li{
+    margin: 20px;
+}
+.content a:hover{
+    color: rgb(187, 187, 187);
+}
+.content a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.banner img{
+    max-width:100%;
+}
+
+
+.projetos{
+padding: 20px;
+display: flex;
+justify-content: center;
+}
+
+.projeto{
+align-items: center;
+text-align: center;
+margin: 20px;
+
+}
+
+.projeto img{
+    width: 350px;
+    border-radius: 20px;
+
+}
+.projeto p{
+    font-size: 25px;
+}

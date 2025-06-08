@@ -304,3 +304,8 @@ font-size: 20px;
 .galery a{
     background-color: #11120c;
 }
+
+.titulo{
+    display: flex;
+    justify-content: center;
+}

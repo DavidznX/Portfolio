@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    scroll-behavior: smooth;
+    margin: 0px;
+    border: 0px;
+    font-family: "Pixelify Sans", sans-serif;
+
+    
+}
+
+
+.cabecalho div{
+display: flex;
+justify-content: space-around;
+}
+
+.cabecalho ul{
+display: flex;
+justify-content: space-around;
+align-items: center;
+list-style: none;
+}
+
+.cabecalho li{
+margin-left:20px ;
+margin-right:20px ;
+}
+
+.cabecalho a{
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+}
+
+.cabecalho a:hover{
+color: rgb(255, 116, 236);
+text-decoration: underline;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.content h1{
+align-items: center;
+text-align: center;
+font-size: 50px;
+margin-top:30px ;
+margin-bottom:30px ;
+}
+
+
+.download button{
+    font-size: 20px;
+    background-color: #ff97c8;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+
+    
+}
+.download button:hover{
+    transition: 90ms;
+    font-size: 25px;
+    background-color: #ff97c8;
+    padding: 13px;
+}
+.download{
+    display: flex;
+    justify-content: center;
+}
+
+.devs{
+    margin-top:60px ;
+    margin-bottom:60px ;
+}
+
+.devs h1{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.pessoal{
+    display: flex;
+    justify-content: center;
+}
+.devs img{
+    border-radius: 360px;
+    width: 150px;
+}
+
+.dev{
+    margin-left:20px ;
+    margin-right:20px ;
+    align-items: center;
+    text-align: center;
+}
+
+
+.makingoff{
+    padding: 30px;
+    background-color: #ff97c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.makingoff h1{
+    margin-bottom: 20px;
+}

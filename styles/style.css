@@ -1,7 +1,5 @@
+/*GERAIS*/
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
-html{
-    scroll-behavior: smooth;
-}
 *{
 
     color: white;
@@ -10,72 +8,236 @@ html{
     padding: 0px;
     box-sizing: border-box;
     font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    background-color: #141414 ;
 }
 
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+html{
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin: 50px;
+}
+
+
+/*-------------HEADER-------------*/
+
+.cabecalho{
+    background-color: #141414;
+}
 .cabecalho div img{
 border-radius: 360px;
 width: 200px;
 }
 
-.content{
+
+.content_header{
     margin: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #141414;
+   
 }
 
-.content ul{
+.content_header ul{
     list-style: none;
     display: flex;
 
 }
 
-.content li{
+.content_header li{
     margin: 20px;
 }
-.content a:hover{
-    color: rgb(187, 187, 187);
+.content_header a:hover{
+    color: #03f86d;
 }
-.content a{
+.content_header a{
     color: white;
     text-decoration: none;
     font-size: 25px;
 }
 
 
-.banner img{
-    max-width:100%;
+/*---------------------------------------------------*/
+/*PAGINA SOBRE MIM INDEX*/
+
+
+
+.sobremim{
+
+    align-items: center;
+    border-radius: 20px;
+    background-color: #141414;
+    
+}
+.div_content_master_text{
+    display: flex;
+    justify-content: center;
+
 }
 
 
-.projetos{
-padding: 20px;
+
+.texto_apresensentacao{
+    background-color: #070707;
+    padding: 30px;
+    border-radius: 20px;
+
+
+
+}
+.texto_apresensentacao h1{
+        color: #03f86d;
+}
+
+.texto_apresensentacao p{
+        color: #03f86d;
+}
+.sobremim div{
+    margin: 60px;
+    
+}
+.sobremim img{
+    width: 600px;
+    border-radius: 20px;
+}
+
+.sobremim p{
+    font-size: 25px;
+    max-width: 600px;
+    text-align: justify;
+}
+
+.sobremim h1{
+    font-size: 40px;
+}
+
+.sobre_mim_imgs{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.sobre_mim_imgs img{
+    width: 165px;
+}
+
+#goto_projetos{
+    color: #03f86d;
+    
+}
+
+/*PAGINA SOBRE MIM COMPETENCIAS*/
+
+.section_competencias{
+    margin: 30px;
+
+
+}
+.competencias{
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #141414;
+    padding: 20px;
+}
+.competencias h1{
+    align-items: center;
+}
+.competencias div{
+    padding: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 20px;
+    margin: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    text-align: center;
+    background-color: #070707;
+}
+
+.competencias p{
+    margin-top:10px ;
+    font-size: 30px;
+}
+.competencias h1{
+    text-align: center;
+}
+
+.competencias img{
+    width: 300px;
+}
+
+
+
+
+/*-------------PROJETOS-----------*/
+/*galeria de projetos*/
+
+.galeria h1{
+    margin-bottom: 20px;
+    color: #03f86d;
+}
+
+.section_title_h1 div{
 display: flex;
 justify-content: center;
 }
-
-.projeto{
-align-items: center;
-text-align: center;
-margin: 20px;
-
+.section_title_h1{
+    margin: 30px;
+}
+.projetos{
+    border-radius: 20px;
+    margin: 30px;
+    padding: 30px;
+    background-color: #141414;
 }
 
-.projeto img{
-    width: 350px;
+
+
+
+
+.div_galeria_itens_master{
     border-radius: 20px;
 
+    display: flex;
+    justify-content: center;
+    background-color: #070707;
 }
-.projeto p{
-    font-size: 25px;
+
+.div_card{
+    margin: 50px;
+    background-color: #141414;
+    padding: 30px;
+    border-radius: 20px;
+}
+.div_card img{
+    border-radius: 20px;
+width: 600px;
+}
+
+.div_card h2{
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
 }
 
 
-/* AREA DA PAGINA DE PROJETOS*/
+
 
 .container{
     margin-left: 200px;
@@ -110,202 +272,3 @@ margin: 20px;
     color:rgb(161, 161, 255) ;
 }
 
-
-
-
-.redes {
- display: flex;
- justify-content: center;
- align-items: center;
- text-align: center;
-}
-
-.redes div{
-    flex-wrap: wrap;
-    margin: 20px;
-}
-
-
-
-/* styles/style.css */
-
-.redes img.img2 {
-    display: none; /* A segunda imagem fica oculta por padrão */
-}
-
-.redes div:hover img.img1 {
-    display: none; /* Esconde a primeira imagem ao passar o mouse */
-}
-
-.redes div:hover img.img2 {
-    display: inline; /* Mostra a segunda imagem ao passar o mouse */
-}
-
-.redes p{
-    font-size: 25px;
-}
-
-.redes div:hover p{
-    transition: 100ms;
-    color:#03f86d ;
-}
-
-.competencias{
-    display: flex;
-    justify-content: center;
-}
-.competencias h1{
-    align-items: center;
-}
-.competencias div{
-    margin: 20px;
-    align-items: center;
-    text-align: center;
-}
-
-.competencias p{
-    font-size: 20px;
-}
-
-.sobremim{
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-    align-items: center;
-}
-
-.sobremim div{
-    margin: 20px;
-}
-.sobremim img{
-    width: 500px;
-}
-
-.sobremim p{
-    font-size: 20px;
-    max-width: 500px;
-    text-align: justify;
-}
-
-.sobremim h1{
-    font-size: 30px;
-}
-
-.sobre_mim_imgs{
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-}
-
-.sobre_mim_imgs img{
-    width: 165px;
-}
-
-.competencias h1{
-    text-align: center;
-}
-
-#img{
-    width: 650px;
-}
-
-#img2{
-    width: 450px;
-}
-
-.titulo_no_centro{
-    align-items: center;
-    text-align: center;
-}
-
-#lista-produtos{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-#lista-produtos img{
-    width: 260px;
-}
-
-.desc_prod{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.desc_prod_container{
-    max-width: 700px;
-}
-.desc_prod img{
-width: 600px;
-}
-.desc_prod a{
-background-color: #03f86d;
-color: rgb(255, 255, 255);
-padding: 5px;
-border-radius: 3px;
-}
-
-.desc_prod div{
-    margin: 30px;
-}
-
-.desc_prod p{
-    margin-bottom: 20px;
-}
-
-.desc_prod_inf{
-    margin:20px ;
-    flex-wrap: wrap;
-    font-size: 20px;
-}
-
-
-.buy_button{
-
-    font-size: 30px;
-}
-
-.price_product{
-    font-size: 25px;
-    color: #03f86d;
-}
-
-.galery{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0px;
-    padding: 0px;
-}
-.galery img{
-    width: 300px;
-    margin: 2px;
-    
-}
-
-.galery img:hover{
-
-cursor: pointer;
-}
-
-#produtosssss img{
-    width: 120px;
-    margin: 0px;
-}
-
-#produtosssss a{
-font-size: 20px;
-}
-
-.galery a{
-    background-color: #11120c;
-}
-
-.titulo{
-    display: flex;
-    justify-content: center;
-}

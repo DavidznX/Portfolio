@@ -44,6 +44,7 @@ img{
     justify-content: center;
     list-style: none    ;
     background-color: #141414;
+    flex-wrap: wrap;
 }
 .div_lista_links_cabecalho li{
     margin: 10px;
@@ -55,6 +56,11 @@ img{
     text-decoration:none ;
     font-size: 25px;
     background-color: #141414;
+}
+
+.div_lista_links_cabecalho li :hover{
+    color: #03fa6e;
+
 }
 
 
@@ -79,6 +85,7 @@ img{
     border-radius: 20px;
     padding: 60px;
     align-items: center;
+    flex-wrap: wrap;
 
 }
 
@@ -90,27 +97,33 @@ img{
 
 }
 
-.sobre_mim_imagen{
+.sobre_mim_imagem{
     margin: 20px;
-    border-radius: 60px;
+    background-color: #141414;
 
 
 
 
 }
 
-.sobre_mim_imagen img{
+.sobre_mim_imagem img{
     background-color: #141414;
+    border-radius: 20px;
+
 
 }
 
 
 .sobre_mim_texto h1{
     font-size: 30px;
+    color: #03fa6e;
 }
 .sobre_mim_texto p{
     font-size: 25px;
-    text-justify:unset;
+    text-align: justify;
+    color: #03fa6e;
+    
+
 }
 /*===========competencias============*/
 .competencias{
@@ -126,6 +139,7 @@ img{
     padding: 20px;
     background-color: #141414;
     border-radius: 20px;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -134,4 +148,27 @@ img{
     padding-right:40px ;
     margin: 10px;
     border-radius: 20px;
+}
+
+.card img{
+    width: 250px;
+}
+
+
+
+/*----------PAGINA REDES-------------*/
+
+#banner_yt{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #141414;
+}
+
+#banner_yt img{
+width: 70%;
+}
+
+#banner_yt img{
+width: 70%;
 }

@@ -172,10 +172,14 @@ width: 70%;
 #banner_yt img{
 width: 70%;
 }
-
+.section_redes_sociais{
+    margin: 30px;
+    
+}
 .div_card_redes_master{
     display: flex;
     justify-content: center;
+    background-color: #141414;
 }
 
 
@@ -189,4 +193,32 @@ width: 70%;
 
 .card_redes :hover img.img2 {
     display: inline; /* Mostra a segunda imagem ao passar o mouse */
+}
+
+.card_redes{
+    padding: 10px;
+    background-color: #070707;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+
+.img1{
+    width: 200px;
+}
+
+
+
+#icon{
+    border-radius: 360px;
+    width: 100px;
+}
+
+#etiquetas{
+    width: 300px;
+    border-radius: 20px;
+}
+
+#oculta{
+    display: none;
 }

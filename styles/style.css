@@ -175,50 +175,204 @@ width: 70%;
 .section_redes_sociais{
     margin: 30px;
     
-}
-.div_card_redes_master{
-    display: flex;
-    justify-content: center;
-    background-color: #141414;
+    
 }
 
 
-.card_redes img.img2 {
+
+
+
+
+.redes {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+background-color: #141414;
+}
+
+.redes div{
+    flex-wrap: wrap;
+    margin: 20px;
+    background-color: #070707;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.redes div img{
+    border-radius: 360px;
+    margin-bottom: 20px;
+}
+
+.redes div a{
+    text-decoration: none;
+    background-color: #070707;
+}
+
+
+/* styles/style.css */
+
+.redes img.img2 {
     display: none; /* A segunda imagem fica oculta por padrão */
 }
 
-.card_redes :hover img.img1 {
+.redes div:hover img.img1 {
     display: none; /* Esconde a primeira imagem ao passar o mouse */
 }
 
-.card_redes :hover img.img2 {
+.redes div:hover img.img2 {
     display: inline; /* Mostra a segunda imagem ao passar o mouse */
 }
 
-.card_redes{
-    padding: 10px;
+.redes p{
+    font-size: 25px;
     background-color: #070707;
+    
+}
+
+.redes div:hover p{
+    transition: 100ms;
+    color:#03f86d ;
+}
+
+
+/*PAGINA DE PORTFOLIO*/
+.portfolio{
+    background-color:#0f0f0f;
+    margin: 60px;
     border-radius: 20px;
+}
+
+/* TITULOS */
+.title_galeria_de_jogos{
+    padding: 40px 40px 10px 40px;
+}
+
+.title_galeria_de_jogos h1{
+    color: #03fa6e;
+    font-size: 42px;
+    margin: 0;
+    font-weight: 700;
+}
+
+/* GRID DE PROJETOS */
+.div_projetos_master{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px;
+    background-color: #070707;
+    border-radius: 15px;
+}
+
+@media (max-width: 900px){
+    .div_projetos_master{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .div_projetos_master{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* CARD */
+.card_projeto{
+    width: 100%;
+    background: #1a1a1a;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.card_projeto:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #03fa6e55;
+}
+
+/* IMAGEM */
+.card_projeto img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* TITULO */
+.card_projeto p{
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* BOTAO */
+.button_ver_mais{
     margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+}
+
+.button_ver_mais button{
+    background-color: #03fa6e;
+    color: black;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button_ver_mais button:hover{
+    background-color: #02c957;
 }
 
 
-.img1{
-    width: 200px;
+/*PAGINA DE PROJETOS*/
+.pagina_projeto{
+    padding: 60px;
+    color: white;
+    background-color: #0f0f0f;
 }
 
-
-
-#icon{
-    border-radius: 360px;
-    width: 100px;
+.pagina_projeto h1{
+    font-size: 50px;
+    color: #03fa6e;
+    margin-bottom: 40px;
 }
 
-#etiquetas{
-    width: 300px;
+.video_container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.descricao_projeto{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.colaboradores_projeto ul{
+    list-style: none;
+    padding: 0;
+}
+
+.colaboradores_projeto li{
+    margin-bottom: 5px;
+}
+
+.links_projeto a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #03fa6e;
+    color: black;
     border-radius: 20px;
-}
-
-#oculta{
-    display: none;
+    text-decoration: none;
+    font-weight: bold;
 }

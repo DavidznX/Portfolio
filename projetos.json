@@ -1,0 +1,14 @@
+{
+  "projetos": [
+    {
+      "id": "recovering_a_love",
+      "titulo": "Recovering a Love",
+      "thumb": "./img/projetos/recovering_a_love/thumb.png",
+      "categoria": "jogos",
+      "descricao": "Em 2024, na metade do ano para ser mais preciso, tive a ideia de fazer um jogo para minha namorada que no final das contas era um presente para comemorar o nosso aniversario de namoro, então me dediquei por quase um ano, e tirei o jogo do papel, ele não e como eu queria que fosse mais eu consegui terminar e fico feliz com isso. ",
+      "video": "https://www.youtube.com/embed/2gNep0g3lhc",
+      "colaboradores": ["David"],
+      "repositorio": "https://github.com/seuusuario/recovering_a_love"
+    }
+  ]
+}

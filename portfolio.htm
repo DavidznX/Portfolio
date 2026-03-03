@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/style.css">
     <title>Meus Projetos</title>
 </head>
 <body>
@@ -24,5 +25,106 @@
     </header>
 
 
-</body>
+    <div class="portfolio">
+
+        <div class="master_galeria">
+            <div class="title_galeria_de_jogos">
+                <h1>Galeria de Jogos</h1>
+            </div>
+
+            <div class="div_projetos_master"></div>
+
+            <div class="button_ver_mais">
+                <button>Ver mais</button>
+            </div>
+        </div>
+
+        <div class="master_modelagen">
+            <div class="title_galeria_de_jogos">
+                <h1>Modelagens 3D</h1>
+            </div>
+
+            <div class="div_projetos_master"></div>
+
+            <div class="button_ver_mais">
+                <button>Ver mais</button>
+            </div>
+        </div>
+
+        <div class="master_projetos">
+            <div class="title_galeria_de_jogos">
+                <h1>Projetos Gerais</h1>
+            </div>
+
+            <div class="div_projetos_master"></div>
+
+            <div class="button_ver_mais">
+                <button>Ver mais</button>
+            </div>
+        </div>
+
+    </div>
+
+   <script>
+async function carregarProjetos() {
+    try {
+        const resposta = await fetch("./projetos.json");
+        const dados = await resposta.json();
+        const projetos = dados.projetos;
+
+        configurarSecao("jogos", 3, ".master_galeria");
+        configurarSecao("modelagem", 6, ".master_modelagen");
+        configurarSecao("geral", 3, ".master_projetos");
+
+        function configurarSecao(categoria, quantidadeInicial, seletor) {
+
+            const container = document.querySelector(seletor + " .div_projetos_master");
+            const botao = document.querySelector(seletor + " .button_ver_mais button");
+
+            const filtrados = projetos.filter(p => p.categoria === categoria);
+
+            let quantidadeAtual = quantidadeInicial;
+
+            function renderizar() {
+                container.innerHTML = "";
+
+                filtrados.slice(0, quantidadeAtual).forEach(projeto => {
+
+                    const card = document.createElement("div");
+                    card.classList.add("card_projeto");
+
+                    card.innerHTML = `
+                        <img src="${projeto.thumb}" alt="${projeto.titulo}">
+                        <p>${projeto.titulo}</p>
+                    `;
+
+                    card.addEventListener("click", () => {
+                        window.location.href = "projeto.htm?id=" + projeto.id;
+                    });
+
+                    container.appendChild(card);
+                });
+
+                // Se acabou os projetos, esconde o botão
+                if (quantidadeAtual >= filtrados.length) {
+                    botao.style.display = "none";
+                }
+            }
+
+            botao.addEventListener("click", () => {
+                quantidadeAtual += quantidadeInicial;
+                renderizar();
+            });
+
+            renderizar();
+        }
+
+    } catch (erro) {
+        console.error("Erro ao carregar projetos:", erro);
+    }
+}
+
+carregarProjetos();
+</script>
+
 </html>

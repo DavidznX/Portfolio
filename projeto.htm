@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Projeto</title>
+</head>
+
+<body>
+
+<header class="cabecalho">
+
+    <div class="div_img_cabecalho">
+        <img src="./img/logodavid.png" alt="">
+    </div>
+
+    <div class="div_lista_links_cabecalho">
+        <ul>
+            <li><a href="index.htm">APRESENTAÇÃO</a></li>
+            <li><a href="portfolio.htm">PORTFOLIO</a></li>
+            <li><a href="redes.htm">REDES</a></li>
+        </ul>
+    </div>
+</header>
+
+
+<!-- CONTEUDO DINAMICO -->
+<div class="pagina_projeto">
+
+    <h1 id="titulo_projeto"></h1>
+
+    <div class="video_container">
+        <iframe id="video_projeto"
+            width="800"
+            height="450"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="descricao_projeto">
+        <p id="descricao_projeto"></p>
+    </div>
+
+    <div class="colaboradores_projeto">
+        <h3>Colaboradores</h3>
+        <ul id="lista_colaboradores"></ul>
+    </div>
+
+    <div class="links_projeto">
+        <a id="link_repositorio" target="_blank">Ver Repositório</a>
+    </div>
+
+</div>
+
+
+
+<script>
+
+async function carregarProjeto() {
+
+    const parametros = new URLSearchParams(window.location.search);
+    const id = parametros.get("id");
+
+    if (!id) {
+        document.body.innerHTML = "<h1>Projeto não encontrado</h1>";
+        return;
+    }
+
+    const resposta = await fetch("./projetos.json");
+    const dados = await resposta.json();
+
+    const projeto = dados.projetos.find(p => p.id === id);
+
+    if (!projeto) {
+        document.body.innerHTML = "<h1>Projeto não encontrado</h1>";
+        return;
+    }
+
+    document.getElementById("titulo_projeto").textContent = projeto.titulo;
+    document.getElementById("descricao_projeto").textContent = projeto.descricao;
+    document.getElementById("video_projeto").src = projeto.video;
+    document.getElementById("link_repositorio").href = projeto.repositorio;
+
+    const lista = document.getElementById("lista_colaboradores");
+    lista.innerHTML = "";
+
+    projeto.colaboradores.forEach(nome => {
+        const li = document.createElement("li");
+        li.textContent = nome;
+        lista.appendChild(li);
+    });
+
+}
+
+carregarProjeto();
+
+</script>
+
+</body>
+</html>

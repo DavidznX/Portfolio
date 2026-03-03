@@ -12,6 +12,7 @@
     font-style: normal;
     color: white;
     background-color: black;
+    border-radius: 2px solid white;
 
 
 }
@@ -238,15 +239,37 @@ background-color: #141414;
 
 
 /*PAGINA DE PORTFOLIO*/
+
+
 .portfolio{
-    background-color:#0f0f0f;
+    background-color:#141414;
     margin: 60px;
     border-radius: 20px;
+    padding: 20px;
 }
+
+
+.master_galeria {
+    background-color: #070707;
+    border-radius: 20px;
+}
+.master_modelagen{
+    background-color: #070707;
+    border-radius: 20px;
+}
+
+.master_projetos{
+    background-color: #070707;
+    border-radius: 20px;
+}
+
+
 
 /* TITULOS */
 .title_galeria_de_jogos{
     padding: 40px 40px 10px 40px;
+    border-radius: 20px;
+    background-color: #070707;
 }
 
 .title_galeria_de_jogos h1{
@@ -254,6 +277,7 @@ background-color: #141414;
     font-size: 42px;
     margin: 0;
     font-weight: 700;
+    background-color: #070707;
 }
 
 /* GRID DE PROJETOS */
@@ -262,8 +286,8 @@ background-color: #141414;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 30px;
-    background-color: #070707;
     border-radius: 15px;
+    background-color: #070707;
 }
 
 @media (max-width: 900px){
@@ -278,7 +302,6 @@ background-color: #141414;
     }
 }
 
-/* CARD */
 .card_projeto{
     width: 100%;
     background: #1a1a1a;
@@ -288,37 +311,35 @@ background-color: #141414;
     transition: 0.3s ease;
 }
 
+
 .card_projeto:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 0 20px #03fa6e55;
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px #03fa6e;
 }
 
-/* IMAGEM */
 .card_projeto img{
     width: 100%;
-    height: 180px;
+    height: 300px;
     object-fit: cover;
 }
 
-/* TITULO */
 .card_projeto p{
     color: white;
     padding: 15px;
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
 }
 
-/* BOTAO */
 .button_ver_mais{
-    margin: 20px;
     display: flex;
     justify-content: flex-end;
-    padding: 20px 40px;
-}
+    background-color: #070707;
+    margin: 20px;
+} 
 
 .button_ver_mais button{
     background-color: #03fa6e;
-    color: black;
+    color: rgb(255, 255, 255);
     border-radius: 30px;
     border: none;
     padding: 10px 25px;
@@ -326,53 +347,109 @@ background-color: #141414;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+    margin: 15px;
+
 }
 
 .button_ver_mais button:hover{
-    background-color: #02c957;
+    background-color: #41ff93;
 }
+
+
+
+
+
+
 
 
 /*PAGINA DE PROJETOS*/
 .pagina_projeto{
+    margin: 60px;
     padding: 60px;
     color: white;
-    background-color: #0f0f0f;
+    background-color: #070707;
+    border-radius: 20px;
 }
 
 .pagina_projeto h1{
     font-size: 50px;
     color: #03fa6e;
     margin-bottom: 40px;
+        background-color: #070707;
 }
 
 .video_container{
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    background-color: #070707;
 }
 
 .descricao_projeto{
     font-size: 20px;
     margin-bottom: 40px;
+
+}
+.descricao_projeto p{
+            background-color: #070707;
 }
 
+.colaboradores_projeto h3{
+    background-color: #070707; 
+    font-size: 25px;
+    color: #03f86d;
+}
 .colaboradores_projeto ul{
     list-style: none;
     padding: 0;
+            background-color: #070707;
 }
 
 .colaboradores_projeto li{
     margin-bottom: 5px;
+    background-color: #070707;
+    font-size: 20px;
+}
+
+
+
+
+
+
+.links_projeto{
+     background-color: #070707;
 }
 
 .links_projeto a{
-    display: inline-block;
+    display: inline-flex; 
+    align-items: center; 
+    gap: 10px;           
     margin-top: 20px;
     padding: 10px 25px;
     background-color: #03fa6e;
-    color: black;
+    color: white;
     border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s ease; 
 }
+
+.links_projeto img{
+    width: 40px;
+    border-radius: 360px;
+    transition: 0.3s ease; 
+}
+
+/* 🔥 Hover */
+.links_projeto a:hover{
+    background-color: #000000; 
+}
+
+.links_projeto a:hover img{
+    content: url(../img/icones/git_hub2.png);
+}
+
+
+
+

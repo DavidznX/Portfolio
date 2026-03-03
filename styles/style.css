@@ -164,6 +164,9 @@ img{
     justify-content: center;
     padding: 20px;
     background-color: #141414;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
 }
 
 #banner_yt img{
@@ -179,17 +182,15 @@ width: 70%;
     
 }
 
-
-
-
-
-
 .redes {
  display: flex;
  justify-content: center;
  align-items: center;
  text-align: center;
 background-color: #141414;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+ 
 }
 
 .redes div{
@@ -211,8 +212,6 @@ background-color: #141414;
     background-color: #070707;
 }
 
-
-/* styles/style.css */
 
 .redes img.img2 {
     display: none; /* A segunda imagem fica oculta por padrão */

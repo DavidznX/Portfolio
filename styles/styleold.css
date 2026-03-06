@@ -1,24 +1,25 @@
-/*================ GERAIS ================*/
+/*GERAIS*/
 
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
+
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
     font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     color: white;
-}
-
-body{
     background-color: black;
-}
+    border-radius: 2px solid white;
 
+
+}
 img{
-    max-width: 100%;
-    height: auto;
+    padding: 0px;
+    margin: 0px;
 }
-
 .section_title{
     display: flex;
     justify-content: center;
@@ -26,44 +27,52 @@ img{
     margin: 20px;
 }
 
-/*================ CABEÇALHO ================*/
+/*CABECALHO*/
 
 .cabecalho{
     text-align: center;
+    align-items: center;
     background-color: #141414;
 }
+
+
 
 .div_lista_links_cabecalho{
     margin: 20px;
 }
-
 .div_lista_links_cabecalho ul{
     display: flex;
     justify-content: center;
-    list-style: none;
+    list-style: none    ;
+    background-color: #141414;
     flex-wrap: wrap;
+}
+.div_lista_links_cabecalho li{
+    margin: 10px;
     background-color: #141414;
 }
 
-.div_lista_links_cabecalho li{
-    margin: 10px;
-}
-
 .div_lista_links_cabecalho a{
-    text-decoration:none;
+
+    text-decoration:none ;
     font-size: 25px;
     background-color: #141414;
 }
 
-.div_lista_links_cabecalho a:hover{
+.div_lista_links_cabecalho li :hover{
     color: #03fa6e;
+
 }
+
 
 .div_img_cabecalho{
     background-color: #141414;
 }
 
-/*================ SOBRE MIM ================*/
+
+
+
+/*CORPO SOBRE MIM*/
 
 .apresentacao{
     display: flex;
@@ -78,36 +87,46 @@ img{
     padding: 60px;
     align-items: center;
     flex-wrap: wrap;
+
 }
 
 .sobre_mim_texto{
     margin: 20px;
     padding: 20px;
     max-width: 600px;
+    border-radius: 20px;
+
 }
 
 .sobre_mim_imagem{
     margin: 20px;
     background-color: #141414;
+
+
+
+
 }
 
 .sobre_mim_imagem img{
+    background-color: #141414;
     border-radius: 20px;
+
+
 }
+
 
 .sobre_mim_texto h1{
     font-size: 30px;
     color: #03fa6e;
 }
-
 .sobre_mim_texto p{
     font-size: 25px;
     text-align: justify;
     color: #03fa6e;
+    
+
 }
-
-/*================ COMPETENCIAS ================*/
-
+/*===========competencias============*/
 .competencias{
     display: flex;
     justify-content: center;
@@ -125,16 +144,20 @@ img{
 }
 
 .card{
-    padding: 20px 40px;
+    padding: 20px;
+    padding-left:40px ;
+    padding-right:40px ;
     margin: 10px;
     border-radius: 20px;
 }
 
 .card img{
-    width: 200px;
+    width: 250px;
 }
 
-/*================ REDES SOCIAIS ================*/
+
+
+/*----------PAGINA REDES-------------*/
 
 #banner_yt{
     display: flex;
@@ -143,32 +166,40 @@ img{
     background-color: #141414;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+
 }
 
 #banner_yt img{
-    width: 70%;
+width: 70%;
 }
 
+#banner_yt img{
+width: 70%;
+}
 .section_redes_sociais{
     margin: 30px;
+    
+    
 }
 
-.redes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #141414;
+.redes {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+background-color: #141414;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    flex-wrap: wrap;
+ 
 }
 
 .redes div{
+    flex-wrap: wrap;
     margin: 20px;
     background-color: #070707;
     padding: 20px;
     border-radius: 20px;
+
 }
 
 .redes div img{
@@ -181,28 +212,33 @@ img{
     background-color: #070707;
 }
 
-.redes img.img2{
-    display: none;
+
+.redes img.img2 {
+    display: none; /* A segunda imagem fica oculta por padrão */
 }
 
-.redes div:hover img.img1{
-    display: none;
+.redes div:hover img.img1 {
+    display: none; /* Esconde a primeira imagem ao passar o mouse */
 }
 
-.redes div:hover img.img2{
-    display: inline;
+.redes div:hover img.img2 {
+    display: inline; /* Mostra a segunda imagem ao passar o mouse */
 }
 
 .redes p{
     font-size: 25px;
     background-color: #070707;
+    
 }
 
 .redes div:hover p{
-    color:#03f86d;
+    transition: 100ms;
+    color:#03f86d ;
 }
 
-/*================ PORTFOLIO ================*/
+
+/*PAGINA DE PORTFOLIO*/
+
 
 .portfolio{
     background-color:#141414;
@@ -211,31 +247,58 @@ img{
     padding: 20px;
 }
 
-.master_galeria,
-.master_modelagen,
+
+.master_galeria {
+    background-color: #070707;
+    border-radius: 20px;
+}
+.master_modelagen{
+    background-color: #070707;
+    border-radius: 20px;
+}
+
 .master_projetos{
     background-color: #070707;
     border-radius: 20px;
 }
 
+
+
+/* TITULOS */
 .title_galeria_de_jogos{
     padding: 40px 40px 10px 40px;
+    border-radius: 20px;
     background-color: #070707;
 }
 
 .title_galeria_de_jogos h1{
     color: #03fa6e;
     font-size: 42px;
+    margin: 0;
+    font-weight: 700;
+    background-color: #070707;
 }
 
-/* GRID PROJETOS */
-
+/* GRID DE PROJETOS */
 .div_projetos_master{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 30px;
+    border-radius: 15px;
     background-color: #070707;
+}
+
+@media (max-width: 900px){
+    .div_projetos_master{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .div_projetos_master{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .card_projeto{
@@ -244,11 +307,12 @@ img{
     border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
+
 .card_projeto:hover{
-    transform: translateY(-5px);
+    transform: translateY(-2px);
     box-shadow: 0 0 20px #03fa6e;
 }
 
@@ -259,39 +323,49 @@ img{
 }
 
 .card_projeto p{
+    color: white;
     padding: 15px;
     font-size: 25px;
     text-align: center;
 }
-
-/* BOTÃO */
 
 .button_ver_mais{
     display: flex;
     justify-content: flex-end;
     background-color: #070707;
     margin: 20px;
-}
+} 
 
 .button_ver_mais button{
     background-color: #03fa6e;
+    color: rgb(255, 255, 255);
     border-radius: 30px;
     border: none;
     padding: 10px 25px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
+    margin: 15px;
+
 }
 
 .button_ver_mais button:hover{
     background-color: #41ff93;
 }
 
-/*================ PAGINA PROJETO ================*/
 
+
+
+
+
+
+
+/*PAGINA DE PROJETOS*/
 .pagina_projeto{
     margin: 60px;
     padding: 60px;
+    color: white;
     background-color: #141414;
     border-radius: 20px;
 }
@@ -300,140 +374,81 @@ img{
     font-size: 50px;
     color: #03fa6e;
     margin-bottom: 40px;
+        background-color: #141414;
 }
 
 .video_container{
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-}
-
-.video_container iframe{
-    width: 100%;
-    max-width: 900px;
-    height: 400px;
+    background-color: #141414;
 }
 
 .descricao_projeto{
     font-size: 20px;
     margin-bottom: 40px;
+
+}
+.descricao_projeto p{
+            background-color: #141414;
 }
 
 .colaboradores_projeto h3{
+    background-color: #141414; 
     font-size: 25px;
     color: #03f86d;
 }
-
 .colaboradores_projeto ul{
     list-style: none;
+    padding: 0;
+            background-color: #141414;
 }
 
 .colaboradores_projeto li{
     margin-bottom: 5px;
+    background-color: #141414;
     font-size: 20px;
 }
 
-/* LINKS */
+
+
+
+
+
+.links_projeto{
+     background-color: #141414;
+}
 
 .links_projeto a{
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
+    display: inline-flex; 
+    align-items: center; 
+    gap: 10px;           
     margin-top: 20px;
     padding: 10px 25px;
     background-color: #03fa6e;
+    color: white;
     border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
+    transition: 0.3s ease; 
 }
 
 .links_projeto img{
     width: 40px;
     border-radius: 360px;
+    transition: 0.3s ease; 
 }
 
+/* Hover */
 .links_projeto a:hover{
-    background-color: #070707;
+    background-color: #070707; 
 }
 
-/*================ RESPONSIVO ================*/
-
-@media (max-width: 900px){
-
-.div_projetos_master{
-    grid-template-columns: repeat(2,1fr);
+.links_projeto a:hover img{
+    content: url(../img/icones/git_hub2.png);
 }
 
-.sobre_mim_texto p{
-    font-size: 20px;
-}
 
-}
 
-/* CELULAR */
 
-@media (max-width: 600px){
-
-.section_title{
-    font-size: 20px;
-}
-
-.div_lista_links_cabecalho a{
-    font-size: 18px;
-}
-
-.div_conteudo_sobre_mim_master{
-    padding: 20px;
-}
-
-.sobre_mim_texto p{
-    font-size: 18px;
-}
-
-.card img{
-    width: 150px;
-}
-
-.redes{
-    flex-direction: column;
-}
-
-.portfolio{
-    margin: 20px;
-}
-
-.title_galeria_de_jogos h1{
-    font-size: 28px;
-}
-
-.div_projetos_master{
-    grid-template-columns: 1fr;
-}
-
-.card_projeto img{
-    height: 200px;
-}
-
-.card_projeto p{
-    font-size: 18px;
-}
-
-.pagina_projeto{
-    margin: 20px;
-    padding: 20px;
-}
-
-.pagina_projeto h1{
-    font-size: 30px;
-}
-
-.descricao_projeto{
-    font-size: 16px;
-}
-
-.links_projeto a{
-    font-size: 16px;
-}
-
-}
